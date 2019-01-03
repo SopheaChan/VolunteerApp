@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ValenteerController</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="valenteer_management_system">Valenteer Management System</string>
+</resources>
