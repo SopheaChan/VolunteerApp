@@ -11,16 +11,13 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import com.bumptech.glide.Glide
 
-class ImageSlideshowAdapter(context: Context): PagerAdapter() {
+class ImageSlideshowAdapter(context: Context, imageList: IntArray) : PagerAdapter() {
     private lateinit var inflater: LayoutInflater
     private val context: Context = context
-    val imageList: IntArray =  intArrayOf(
-        R.drawable.volunteer_image1,
-        R.drawable.volunteer_image2,
-        R.drawable.volunteer_image3
-    )
+    private val imageList: IntArray = imageList
+
     override fun isViewFromObject(p0: View, p1: Any): Boolean {
-       return (p0==p1)
+        return (p0 == p1)
     }
 
     override fun getCount(): Int {
@@ -30,18 +27,15 @@ class ImageSlideshowAdapter(context: Context): PagerAdapter() {
     override fun instantiateItem(container: ViewGroup, position: Int): Any {
         inflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
         val view: View = inflater.inflate(R.layout.image_layout, container, false)
-        val img: ImageView = view.findViewById(R.id.image_layout)
-//        img.setImageResource(images[position])
-        //Set image to imageView using Glide, since Glide is faster than Picasso
+        val img: ImageView = view.findViewById(R.id.slideshow_image_view)
         Glide.with(context).load(imageList[position]).into(img)
         //Add eventClickListener to each image
-        img.setOnClickListener{
+        img.setOnClickListener {
             Snackbar.make(img, "Images: " + (position + 1).toString(), 1000).show()
         }
         container.addView(view)
         return view
     }
-
     override fun destroyItem(container: ViewGroup, position: Int, `object`: Any) {
         container.removeView(`object` as ConstraintLayout)
     }

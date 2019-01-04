@@ -1,7 +1,14 @@
 <resources>
-    <string name="app_name">ValenteerController</string>
+    <string name="app_name">VolunteerController</string>
     <string name="email">Email</string>
     <string name="password">Password</string>
     <string name="login">Login</string>
-    <string name="valenteer_management_system">Valenteer Management System</string>
+    <string name="volunteer_management_system">Volunteer Management System</string>
+    <string name="member">Memeber</string>
+    <string name="event">Event</string>
+    <string name="ticket">Ticket</string>
+    <string name="profile">Profile</string>
+    <string name="about_us">About Us</string>
+    <string name="don_t_have_account">Don\'t have account?</string>
+    <string name="sign_up">Sign up</string>
 </resources>
