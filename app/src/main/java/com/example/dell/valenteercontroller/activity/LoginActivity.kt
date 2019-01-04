@@ -1,9 +1,12 @@
-package com.example.dell.valenteercontroller
+package com.example.dell.valenteercontroller.activity
 
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import com.example.dell.valenteercontroller.R
+import com.example.dell.valenteercontroller.helper.progressBarDisable
+import com.example.dell.valenteercontroller.helper.progressBarEnable
 import kotlinx.android.synthetic.main.activity_login.*
 
 class LoginActivity : AppCompatActivity() {

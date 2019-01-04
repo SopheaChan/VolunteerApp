@@ -1,9 +1,12 @@
-package com.example.dell.valenteercontroller
+package com.example.dell.valenteercontroller.helper
 
+import android.content.Context
+import android.content.Intent
 import android.view.View
 import android.widget.ProgressBar
 import android.widget.TextView
 import android.os.Handler
+import android.support.v4.content.ContextCompat.startActivity
 import android.support.v4.view.PagerAdapter
 import android.support.v4.view.ViewPager
 import me.relex.circleindicator.CircleIndicator

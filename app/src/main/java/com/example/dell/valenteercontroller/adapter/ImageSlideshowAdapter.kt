@@ -1,15 +1,15 @@
-package com.example.dell.valenteercontroller
+package com.example.dell.valenteercontroller.adapter
 
 import android.content.Context
 import android.support.constraint.ConstraintLayout
 import android.support.design.widget.Snackbar
 import android.support.v4.view.PagerAdapter
 import android.view.LayoutInflater
-import android.view.MenuInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import com.bumptech.glide.Glide
+import com.example.dell.valenteercontroller.R
 
 class ImageSlideshowAdapter(context: Context, imageList: IntArray) : PagerAdapter() {
     private lateinit var inflater: LayoutInflater

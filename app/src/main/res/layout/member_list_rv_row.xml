@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent" android:layout_height="160dp"
+        android:padding="2dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/member_rv_row_border">
+    <android.support.v7.widget.CardView
+            android:id="@+id/volunteerPhotoCardLayout"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="16dp">
+        <ImageView android:id="@+id/volunteerPhoto"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:src="@drawable/ic_facebook"
+                   android:scaleType="fitXY"/>
+    </android.support.v7.widget.CardView>
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/volunteerPhotoCardLayout"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp"
+                    android:id="@+id/volunteerInfoLayout1">
+        <TextView android:id="@+id/txtVolunteerName"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Richie Chan"
+                  android:textSize="20sp"/>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/volunteerPhotoCardLayout"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_below="@id/volunteerInfoLayout1"
+                    android:id="@+id/volunteerInfoLayout2"
+                    android:layout_marginTop="5dp">
+        <TextView android:id="@+id/txtIDLabel"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="ID: "/>
+        <TextView android:id="@+id/txtVolunteerID"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_toEndOf="@id/txtIDLabel"
+                  android:layout_marginStart="5dp"
+                  android:text="S001"/>
+        <TextView android:id="@+id/txtGenderLabel"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Sex: "
+                  android:layout_toEndOf="@id/txtVolunteerID"
+                  android:textSize="16sp"
+                  android:layout_marginStart="20dp"/>
+        <TextView android:id="@+id/txtVolunteerGender"
+                  android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:layout_toEndOf="@id/txtGenderLabel"
+                  android:layout_marginStart="5dp"
+                  android:text="Male"/>
+        <TextView android:id="@+id/txtAgeLabel"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_toEndOf="@id/txtVolunteerGender"
+                  android:text="Age: "
+                  android:layout_marginStart="20dp"/>
+        <TextView android:id="@+id/txtVolunteerAge"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_toEndOf="@id/txtAgeLabel"
+                  android:layout_marginStart="5dp"
+                  android:text="23"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/volunteerPhotoCardLayout"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_below="@id/volunteerInfoLayout2"
+                    android:id="@+id/volunteerInfoLayout3"
+                    android:layout_marginTop="5dp">
+        <TextView android:id="@+id/txtIDLabel1"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="ID: "/>
+        <TextView android:id="@+id/txtVolunteerID1"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_toEndOf="@id/txtIDLabel1"
+                  android:layout_marginStart="5dp"
+                  android:text="S001"/>
+        <TextView android:id="@+id/txtGenderLabel1"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Sex: "
+                  android:layout_toEndOf="@id/txtVolunteerID1"
+                  android:textSize="16sp"
+                  android:layout_marginStart="20dp"/>
+        <TextView android:id="@+id/txtVolunteerGender1"
+                  android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:layout_toEndOf="@id/txtGenderLabel1"
+                  android:layout_marginStart="5dp"
+                  android:text="Male"/>
+        <TextView android:id="@+id/txtAgeLabel1"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_toEndOf="@id/txtVolunteerGender1"
+                  android:text="Age: "
+                  android:layout_marginStart="20dp"/>
+        <TextView android:id="@+id/txtVolunteerAge1"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_toEndOf="@id/txtAgeLabel1"
+                  android:layout_marginStart="5dp"
+                  android:text="23"/>
+    </RelativeLayout>
+    <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/volunteerPhotoCardLayout"
+            android:layout_marginTop="5dp"
+            android:id="@+id/addressInfoCardLayout"
+            android:layout_marginStart="10dp"
+            android:background="@android:color/transparent"
+            app:cardElevation="5dp">
+        <RelativeLayout android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Address:"
+                      android:id="@+id/txtAddressLabel"/>
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_toEndOf="@id/txtAddressLabel"
+                      android:layout_marginStart="5dp"
+                      android:id="@+id/txtVolunteerAddress"
+                      android:text="St. 21A, Kandal, Cambodia"
+                      android:maxLines="2"/>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>
